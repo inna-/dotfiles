@@ -5,3 +5,8 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - 
+    command: ./programs.sh
+    stdin: true
+    stdout: true
+    stderr: true
