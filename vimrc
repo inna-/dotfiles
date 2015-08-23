@@ -8,3 +8,8 @@ set shiftwidth=4
 
 set list
 set listchars=tab:->
+
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
