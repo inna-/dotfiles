@@ -13,3 +13,6 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+" Load each specialized settings file
+source ~/.vim/startup/plugins.vim
