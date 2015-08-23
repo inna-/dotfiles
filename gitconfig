@@ -1,0 +1,18 @@
+[user]
+    email = inneekim@gmail.com
+    name = Inna Kim
+
+[alias]
+    br = branch
+    cm = commit
+    co = checkout
+    df = diff
+    l = log
+    p = pull 
+    st = status
+
+[credential]
+    helper = cache --timeout=72000
+
+[grep]
+    lineNumber = true
