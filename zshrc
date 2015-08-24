@@ -14,3 +14,4 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 source $ZSH/oh-my-zsh.sh
 
 alias g='git'
+alias pooshwifi='nmcli d wifi rescan'
