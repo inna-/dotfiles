@@ -15,3 +15,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias g='git'
 alias pooshwifi='nmcli d wifi rescan'
+
+set -o vi
+
+[ -z "$TMUX" ] && exec tmux
