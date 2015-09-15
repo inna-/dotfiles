@@ -7,5 +7,3 @@ nmap <Left> <NOP>
 nmap <Right> <NOP>
 imap <Up> <NOP>
 imap <Down> <NOP>
-imap <Left> <NOP>
-imap <Right> <NOP>

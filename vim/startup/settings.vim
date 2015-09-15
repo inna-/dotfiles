@@ -10,3 +10,6 @@ set list
 set listchars=tab:->
 
 set noswapfile
+
+set hlsearch
+set incsearch

@@ -11,6 +11,8 @@ Plugin 'tpope/vim-vinegar.git'
 Plugin 'tpope/vim-fugitive'
 Plugin 'benmills/vimux'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdcommenter'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
