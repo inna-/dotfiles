@@ -18,4 +18,4 @@ alias pooshwifi='nmcli d wifi rescan'
 
 set -o vi
 
-[ -z "$TMUX" ] && exec tmux
+#[ -z "$TMUX" ] && exec tmux
