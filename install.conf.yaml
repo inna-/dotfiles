@@ -6,11 +6,15 @@
    ~/.gitconfig: gitconfig
    ~/.zshrc: zshrc
    ~/.vim: vim/
+   ~/.oh-my-zsh: oh-my-zsh/
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - 
-    command: ./programs.sh
+  - command: ./programs.sh
+    stdin: true
+    stdout: true
+    stderr: true
+  - command: vim +PluginInstall +qall
     stdin: true
     stdout: true
     stderr: true
