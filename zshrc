@@ -19,3 +19,6 @@ alias pooshwifi='nmcli d wifi rescan'
 set -o vi
 
 [ -z "$TMUX" ] && [ -z "$SSH_CLIENT" ] && exec tmux
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
