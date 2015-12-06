@@ -23,3 +23,5 @@ export EDITOR=vim
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+[ -f /etc/profile.d/rvm.sh ] && source /etc/profile.d/rvm.sh
