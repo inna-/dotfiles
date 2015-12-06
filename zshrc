@@ -17,6 +17,7 @@ alias g='git'
 alias pooshwifi='nmcli d wifi rescan'
 
 set -o vi
+export EDITOR=vim
 
 [ -z "$TMUX" ] && [ -z "$SSH_CLIENT" ] && exec tmux
 
