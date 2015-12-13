@@ -19,6 +19,7 @@ alias pooshwifi='nmcli d wifi rescan'
 ###########
 ## Settings
 set -o vi
+export EDITOR=vim
 
 # Hitting ctrl+r for nice history searching
 bindkey "^r" history-incremental-search-backward
@@ -34,3 +35,5 @@ stty stop undef
 
 # Automatically start TMUX, if not started already
 #[ -z "$TMUX" ] && [ -z "$SSH_CLIENT" ] && exec tmux
+
+[ -f /etc/profile.d/rvm.sh ] && source /etc/profile.d/rvm.sh
