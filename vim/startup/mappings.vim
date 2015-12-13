@@ -13,8 +13,6 @@ inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{     {
 inoremap {}     {}
 
-nnoremap <Leader>h :set hlsearch! hlsearch?<CR>
-
 " If hl search is off, starting a new search or moving enables it
 nnoremap * :set hlsearch<CR>*
 nnoremap # :set hlsearch<CR>#
@@ -22,3 +20,6 @@ nnoremap n :set hlsearch<CR>n
 nnoremap N :set hlsearch<CR>N
 nnoremap / :set hlsearch<CR>/
 nnoremap ? :set hlsearch<CR>?
+
+nnoremap <Leader>h :set hlsearch! hlsearch?<CR>
+nnoremap <Leader>pd <ESC>Opdb.set_trace()<ESC>j

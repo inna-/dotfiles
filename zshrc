@@ -1,24 +1,36 @@
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
 ZSH_THEME="norm"
 
 plugins=(git)
 
 # User configuration
-
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="$PATH:/usr/local/heroku/bin"
 
 source $ZSH/oh-my-zsh.sh
 
+##########
+## Aliases
 alias g='git'
 alias pooshwifi='nmcli d wifi rescan'
 
+###########
+## Settings
 set -o vi
 
-[ -z "$TMUX" ] && [ -z "$SSH_CLIENT" ] && exec tmux
+# Hitting ctrl+r for nice history searching
+bindkey "^r" history-incremental-search-backward
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# Arrow keys for history searching
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+# Unmap ctrl-s as "stop flow"
+stty stop undef
+
+# Automatically start TMUX, if not started already
+#[ -z "$TMUX" ] && [ -z "$SSH_CLIENT" ] && exec tmux
