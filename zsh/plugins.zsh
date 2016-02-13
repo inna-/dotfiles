@@ -10,8 +10,11 @@ if ! zgen saved; then
     zgen oh-my-zsh plugins/command-not-found
     zgen oh-my-zsh plugins/wd
     zgen oh-my-zsh plugins/web-search
-    zgen load zsh-users/zsh-syntax-highlighting
+
+    zgen load djui/alias-tips
+    zgen load zsh-users/zsh-completions
     zgen load zsh-users/zsh-history-substring-search
+    zgen load zsh-users/zsh-syntax-highlighting
 
     # save all to init script
     zgen save
