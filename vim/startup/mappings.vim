@@ -13,6 +13,10 @@ inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{     {
 inoremap {}     {}
 
+" Leaving insert mode with jj or jk
+inoremap jj <Esc><Right>
+inoremap jk <Esc><Right>
+
 " If hl search is off, starting a new search or moving enables it
 nnoremap * :set hlsearch<CR>*
 nnoremap # :set hlsearch<CR>#
@@ -21,5 +25,6 @@ nnoremap N :set hlsearch<CR>N
 nnoremap / :set hlsearch<CR>/
 nnoremap ? :set hlsearch<CR>?
 
+nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader>h :set hlsearch! hlsearch?<CR>
-nnoremap <Leader>pd <ESC>Opdb.set_trace()<ESC>j
+nnoremap <Leader>t :TagbarToggle<CR>
