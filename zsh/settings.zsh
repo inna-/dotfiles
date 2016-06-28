@@ -2,6 +2,10 @@
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 export PATH="$PATH:/usr/local/heroku/bin"
 
+if ["$TERM" != "screen-256color"]; then
+    export TERM=xterm-256color
+fi
+
 set -o vi
 export EDITOR=vim
 
@@ -29,3 +33,6 @@ PROMPT='%{$fg[yellow]%}λ %m %{$fg[green]%}%c %{$fg[yellow]%}→ $(git_prompt_in
 
 ZSH_THEME_GIT_PROMPT_PREFIX="λ %{$fg[blue]%}git %{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[yellow]%} → %{$reset_color%}"
+
+# Pyspark and IPython Notebook
+export SPARK_HOME='/usr/local/spark'

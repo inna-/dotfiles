@@ -17,6 +17,7 @@ Plugin 'ivanov/vim-ipython'             " Vim + IPython Notebook integration
 Plugin 'majutsushi/tagbar'              " Class/Function def sidebar
 Plugin 'scrooloose/nerdcommenter'       " Functions for easier commenting
 Plugin 'scrooloose/syntastic'           " Syntax checking
+Plugin 'scrooloose/nerdtree'            " Awesome stuff
 Plugin 'tpope/vim-dispatch'             " Asynchronous Makes
 Plugin 'tpope/vim-fugitive'             " Git Wrapper
 Plugin 'tpope/vim-repeat'               " Dot operator for plugins

@@ -1,4 +1,4 @@
-colorscheme desert
+colorscheme desert256
 
 set number
 set expandtab
