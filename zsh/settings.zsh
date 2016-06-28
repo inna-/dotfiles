@@ -2,7 +2,7 @@
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 export PATH="$PATH:/usr/local/heroku/bin"
 
-if ["$TERM" != "screen-256color"]; then
+if [ "$TERM" != "screen-256color" ]; then
     export TERM=xterm-256color
 fi
 
@@ -23,8 +23,6 @@ stty stop undef
 
 # Automatically start TMUX, if not started already
 #[ -z "$TMUX" ] && [ -z "$SSH_CLIENT" ] && exec tmux
-
-[ -f /etc/profile.d/rvm.sh ] && source /etc/profile.d/rvm.sh
 
 ## ============================================================================
 ##                                  Prompt
