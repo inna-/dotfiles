@@ -49,3 +49,6 @@ inoremap <expr> <CR> pumvisible() ? "<C-R>=ExpandSnippetOrCarriageReturn()<CR>" 
 let g:syntastic_aggregate_errors = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_always_populate_loc_list = 1
+
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_always_populate_location_list = 1

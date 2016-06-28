@@ -21,3 +21,6 @@ set t_ut=
 
 " Set to 256 color terminal
 set t_Co=256
+
+" Enable the mouse everywhere
+set mouse=a
