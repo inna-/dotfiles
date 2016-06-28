@@ -15,3 +15,9 @@ set incsearch
 
 " Use the system clipboard for yank and put
 set clipboard=unnamedplus
+
+" Fix background color
+set t_ut=
+
+" Set to 256 color terminal
+set t_Co=256

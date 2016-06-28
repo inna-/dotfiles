@@ -8,6 +8,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'Shougo/vimproc'                 " Asynchronous command execution library
 Plugin 'SirVer/ultisnips'               " Text snippets
+Plugin 'Valloric/ListToggle'            " Toggling quickfix and location lists
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'benmills/vimux'                 " Vim and Tmux Integration
 Plugin 'christoomey/vim-tmux-navigator' " Window/Pane switching with Vim and Tmux
@@ -43,3 +44,8 @@ function ExpandSnippetOrCarriageReturn()
 endfunction
 inoremap <expr> <CR> pumvisible() ? "<C-R>=ExpandSnippetOrCarriageReturn()<CR>" : "\<CR>"
 
+
+" Syntastic
+let g:syntastic_aggregate_errors = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_always_populate_loc_list = 1
